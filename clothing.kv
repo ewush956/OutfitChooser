@@ -1,0 +1,63 @@
+MainScreen:
+
+<MainScreen>:
+
+    orientation: "vertical"
+    Button:
+        text: "Settings"
+        size_hint: None, None
+        width: "100dp"
+        height: "60dp"
+        # x, center_x, right
+        #y, center_y, top
+        pos_hint: { "right": 1 }
+
+    BoxLayout:
+        orientation: "horizontal"
+        spacing: "10dp"
+        Label: 
+            text: "~O~"
+            #temporary weather icon lmao
+            width: "100dp"
+            height: "60dp"
+            pos_hint: { "center_x": 0, "y": 0.4 }
+
+        Label: 
+            text: "Weather info"
+            width: "100dp"
+            height: "60dp"
+            pos_hint: { "x": 0, "y": 0.4 }
+
+        Label: 
+            text: "Date"
+            width: "100dp"
+            height: "60dp"
+            pos_hint: { "x": 0, "y": 0.4 }    
+
+    BoxLayout:
+        # orientation: "vertical"
+        Image:
+            source: './temporary_photos/jacket.jpeg'
+            size_hint: 0.8, 0.8
+            pos_hint: {"center_x": 0.8}
+
+
+
+    BoxLayout:
+        orientation: "vertical"        
+        Button:
+            text: "Laundry Day"
+            size_hint: .4, .5
+        Button:
+            text: "Edit Wardrobe"
+            size_hint: .4, .5
+        Button:
+            text: "Choose New Outfit"
+            size_hint: .4, .5
+
+
+<MainWidget>:
+    Button:
+        text: "Laundry Day"
+        size: "100dp", "80dp"
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}

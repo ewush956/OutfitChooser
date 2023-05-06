@@ -1,0 +1,5 @@
+.env
+temp/
+weather_key.py
+geomap_key.py
+geomap_key.py
